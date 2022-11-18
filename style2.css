@@ -1,0 +1,39 @@
+div{
+    background: rgb(68, 184, 23);
+    color: rgb(17, 14, 14);
+    font-weight: bold;
+}
+body{
+    background: url(osmenapeak.jpg) no-repeat; 
+    background-size: cover;
+}
+h2{
+    font-style:italic; color: rgb(255, 0, 13);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 100px;
+}
+h1{
+    font-style: italic; color: red;
+    text-align: center;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+}
+.overflowSample{
+    width: 1000px;
+    height: 200px;
+    overflow-y: scroll;
+    text-indent: 20px;
+    align-tracks: center;
+}
+a{
+    background: blue;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}

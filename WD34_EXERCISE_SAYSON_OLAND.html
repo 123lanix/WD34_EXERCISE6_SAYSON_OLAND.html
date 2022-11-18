@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel Website</title>
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			box-sizing: border-box;
+		}
+		h1{
+			text-align: center;
+			color: blue;
+			padding: 20px;
+		}
+		nav{
+			background-color: lime;
+			display: grid;
+			place-items: center;
+		}
+		nav ul{
+			list-style-type: none;
+		}
+		nav ul a{
+			display: inline-block;
+			padding: 20px;
+			text-decoration: none;
+			color: blue;
+			transition: 0.2s ease-in;
+		}
+		nav ul a:hover{
+			background-color: blue;
+			color: white;
+		}
+		h2{
+    font-style:italic; color: rgb(255, 0, 13);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 100px;
+}
+h1{
+    font-style: italic; color: red;
+    text-align: center;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+}
+h3 a{
+    background: blue;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.overflowSample{
+    width: 1000px;
+    height: 100px;
+    overflow-y: scroll;
+    text-indent: 20px;
+    align-tracks: center;
+	background: rgb(201, 190, 190);
+	color: brown;
+}
+		.items{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			padding: 30px 20px;
+			grid-column-gap: 20px;
+			grid-row-gap: 30px;
+		}
+		.item img{
+			width: 300px;
+			height: 350px;
+			object-fit: cover;
+			cursor: pointer;
+			transition: 0.2s ease;
+			margin: 50px;
+			margin-bottom: 5px;
+		}
+		.item img:hover{
+			transform: scale(1.04);
+		}
+		.item h4{
+			padding: 5px;
+			text-align: center;
+		}
+		body{
+            background: url(main_background.jpg) no-repeat; 
+            background-size:cover;
+			padding: 5px;
+        }   
+		h4{
+			color:black;
+			font-size: 30px;
+			font-style: italic;
+			text-decoration: underline;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		}
+		label{
+			background: rgb(19, 2, 250);
+			color: rgb(220, 220, 231);
+			padding: 5px;
+			font-size: 18px;
+			margin: 5px;
+		}input{
+			background: blue;
+			color: white;
+			padding: 5px;
+			margin: 5px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		a{
+			color: brown;
+			margin-left: 5px;
+			font-weight: bold;
+			font-size: 25px;
+			font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		}
+		textarea{
+            background:blanchedalmond;
+			margin: 3px;
+        }
+		footer{
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background: 594848;
+            color: rgb(22, 18, 18);
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+        }
+		@media screen and (max-width: 1000px){
+			.items{
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+		@media screen and (max-width: 768px){
+			.items{
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+	</style>
+</head>
+<body>
+	<div>
+        <h1 style="text-shadow:4px 4px 8px rgb(24, 9, 241) ;">WELCOME TO THE QUEEN CITY OF THE SOUTH</h1>
+        <h2 style="text-shadow: 5px 5px 5px yellow;">YOU ARE ALL WELCOME HERE IN CEBU</h2>
+    </div>
+	<nav>
+		<ul>
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>Places</li></a>
+			<a href="#"><li>Foods</li></a>
+			<a href="#"><li>Contact</li></a>
+			<a href="#"><li>Booking</li></a>
+		</ul>
+	</nav>
+	<br>
+	<h3><a href="http://127.0.0.1:5500/form_link.html" target="_blank" >Click here to fill up the form</a></h3>
+    <br><br><br>
+	<section class="items">
+		<div class="item">
+			<a href="http://127.0.0.1:5500/WD34_EXERCISE6_OLAND.html"><img src="magellan's_cross.jpg"></a>
+			<h4>Historical Place</h4>
+		</div>
+		<div class="item">
+			<a href="http://127.0.0.1:5500/WD34_EXERCISE6_OLAND.html"><img src="Alejandra's_flowers.jpg"></a>
+			<h4>Tourist Spot</h4>
+		</div>
+		<div class="item">
+			<a href="http://127.0.0.1:5500/food_link.html"><img src="Food.jpg"></a>
+			<h4>Food</h4>
+		</div>
+		<div class="item">
+			<a href="https://youtu.be/1jL4Mc0ljys"><img src="Festival.jpg"></a>
+			<h4>Sinulog Festival</h4>
+		</div>
+		<div class="item">
+			<a href="http://127.0.0.1:5500/ritual_link.html"><img src="ritual.jpg"></a>
+			<h4>Ritual</h4>
+		</div>
+		<div class="item">
+			<a href="Transportation_link.html"><img src="Transportation.jpg"></a>
+			<h4>Transportation</h4>
+		</div>
+		<div class="item">
+			<a href="https://www.booking.com/searchresults.en-gb.html?aid=311984&label=sarrosa-international-and-residential-suites-d4dEwjN5e16ivFPaczStDgS236368229935%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-6394784042%3Alp1011159%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXORK0YJiVoOxcWODxYDaAA&sid=fbf9b352a2b6d3ead8cb0139a097461b&city=-2421883&expand_sb=1&highlighted_hotels=262285&hlrd=no_dates&keep_landing=1&redirected=1&source=hotel&gclid=CjwKCAiAjs2bBhACEiwALTBWZTvR2D1Rf2F46J2cDCxgIFVjzkM8fVei6lfy3EuorCITTNJ11gZZKxoCpX8QAvD_BwE&room1=A,A,;"><img src="hotel.jpg"></a>
+			<h4>Hotel</h4>
+		</div>
+	</section>
+	<div>
+        <a href="http://127.0.0.1:5500/Itinerary_link.html" target="_parent">Itinerary</a>
+		<br><br>
+		<a href="http://127.0.0.1:5500/Tips_in_visiting.html" target="_parent">Tips in visiting Cebu</a>
+		<br><br>
+		<a href="http://127.0.0.1:5500/things_to_bring.html" target="_parent">Things to bring when you are going to Cebu</a>
+	</div>
+	<br>
+	<form>
+		<label for="comment">Comments:</label>
+        <br>
+        <textarea name="comment" cols="60" rows="10"></textarea>
+		<br>
+        <input type="submit" value="Submit">
+	</form>
+    <br>
+    <br>
+    <footer>
+        All Rights Reserved
+    </footer>
+
+</body>
+</html>
